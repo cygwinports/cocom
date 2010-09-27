@@ -1,0 +1,13 @@
+DESCRIPTION="Toolset for creation of compilers and interpreters"
+HOMEPAGE="http://cocom.sourceforge.net/"
+SRC_URI="mirror://sourceforge/cocom/${P}.tar.gz"
+
+src_compile() {
+	# top-level configure is 2.5x, but REGEX/configure is 2.13
+	cd ${S}/REGEX
+	cygautoreconf
+
+	cd ${B}
+	cygconf
+	cygmake
+}
