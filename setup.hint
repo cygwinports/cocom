@@ -1,5 +1,0 @@
-category: Devel
-requires: libgmp3
-sdesc: "Toolset for creation of compilers and interpreters"
-ldesc: "COCOM tool set is oriented towards the creation of compilers, 
-cross-compilers, interpreters, and other language processors."

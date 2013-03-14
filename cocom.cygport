@@ -1,0 +1,19 @@
+NAME="cocom"
+VERSION=0.996
+RELEASE=1
+CATEGORY="Devel"
+SUMMARY="Toolset for creation of compilers and interpreters"
+DESCRIPTION="COCOM tool set is oriented towards the creation of compilers,
+cross-compilers, interpreters, and other language processors."
+HOMEPAGE="http://cocom.sourceforge.net/"
+SRC_URI="mirror://sourceforge/cocom/${P}.tar.gz"
+
+src_compile() {
+	# top-level configure is 2.5x, but REGEX/configure is 2.13
+	cd ${S}/REGEX
+	cygautoreconf
+
+	cd ${B}
+	cygconf
+	cygmake
+}
