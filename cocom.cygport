@@ -1,6 +1,6 @@
 NAME="cocom"
 VERSION=0.996
-RELEASE=1
+RELEASE=2
 CATEGORY="Devel"
 SUMMARY="Toolset for creation of compilers and interpreters"
 DESCRIPTION="COCOM tool set is oriented towards the creation of compilers,
